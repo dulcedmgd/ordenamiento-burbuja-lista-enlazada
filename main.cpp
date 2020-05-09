@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 	
 	strcpy(titulo, "Lista de entrada"); // asigna el nombre de la primera lista a mostrar: lista de entrada
 	imprimirLista(&cabecera, titulo);
-	ordenarLista(&cabecera);	
+	ordenarListaBurbuja(&cabecera);	
 	
 	strcpy(titulo, "Lista ordenada"); // asigna el nombre de la primera lista a mostrar: lista inicial
 	imprimirLista(&cabecera, titulo);
