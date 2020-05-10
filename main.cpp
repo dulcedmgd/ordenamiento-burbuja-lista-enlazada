@@ -4,7 +4,7 @@
 using namespace std;
 
 struct Nodo{
-	int valor;
+	float valor;
 	Nodo *sucesor;	
 };
 
@@ -63,17 +63,17 @@ void imprimirLista(Nodo **cabecera, char titulo[50]){
 	
 	cout << endl << endl << " ** "<< titulo <<" ** " << endl;
 	while(actual->sucesor != NULL){
-		cout << actual->valor << " ";
+		cout << actual->valor << "  ";
 		actual = actual->sucesor;
 		if(actual->sucesor == NULL){
-				cout << actual->valor << " ";
+				cout << actual->valor << "  ";
 		}
 	}
 }
 
 void ordenarListaBurbuja(Nodo **cabecera){
      Nodo *actual , *sucesor;
-     int valor;
+     float valor;
      
      actual = *cabecera;
      
